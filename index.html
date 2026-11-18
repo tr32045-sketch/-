@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>นายอธิป นุ่มนวลศรี | E-Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Prompt',sans-serif;background:#faf7ff;color:#292044}
+:root{--purple:#7442d8;--pink:#e88bd6;--light:#f1eaff}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 3px 15px #0000000d}
+.logo{font-size:22px;font-weight:700;color:var(--purple)}
+nav ul{display:flex;list-style:none;gap:25px}
+nav a{text-decoration:none;color:#39275d;font-size:14px;transition:.3s}
+nav a:hover{color:var(--pink)}
+section{padding:90px 10%;scroll-margin-top:65px}
+.home{min-height:85vh;display:flex;align-items:center;justify-content:space-between;gap:40px;background:linear-gradient(135deg,#f5eaff,#fff1fb,#eee9ff)}
+.home-text{max-width:650px}
+.tag{display:inline-block;background:#eadcff;color:var(--purple);padding:8px 18px;border-radius:30px;margin-bottom:20px;font-size:14px}
+.home h1{font-size:clamp(35px,5vw,60px);color:#3e237d;line-height:1.4}
+.home h1 span{color:#c05ed1}
+.home p{margin:20px 0;color:#746987;line-height:1.9}
+.buttons{display:flex;gap:15px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 25px;border-radius:30px;text-decoration:none;font-size:14px;transition:.3s;cursor:pointer;border:none;font-family:inherit}
+.btn-primary{background:linear-gradient(90deg,#8050e9,#dc78d1);color:white}
+.btn-outline{border:2px solid var(--purple);color:var(--purple);background:white}
+.btn:hover{transform:translateY(-4px);box-shadow:0 8px 20px #8c62d533}
+.profile{width:270px;height:270px;border-radius:50%;background:linear-gradient(135deg,#b18aff,#f5a9e4);display:flex;align-items:center;justify-content:center;font-size:100px;box-shadow:0 15px 40px #a47bd955;flex-shrink:0}
+.heading{text-align:center;margin-bottom:45px}
+.heading h2{font-size:32px;color:var(--purple)}
+.heading p{color:#9287a7;margin-top:8px}
+.about{background:white}
+.about-content{max-width:800px;margin:auto;background:#f8f3ff;border-radius:25px;padding:35px;line-height:2;box-shadow:0 5px 20px #00000008}
+.about-content h3{color:var(--purple);margin-bottom:15px}
+.skills{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.skill{background:#eadcff;color:#7142c7;padding:8px 18px;border-radius:20px;font-size:13px}
+.portfolio{background:linear-gradient(135deg,#faf6ff,#fff3fc)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:25px}
+.card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 6px 25px #65409c12;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card-image{height:160px;background:linear-gradient(135deg,#c8a5ff,#f4b4e8);display:flex;align-items:center;justify-content:center;font-size:55px}
+.card-content{padding:22px}
+.card-content h3{color:var(--purple);margin-bottom:10px}
+.card-content p{font-size:13px;color:#82788e;line-height:1.8}
+.activity{background:white}
+.activity-box{max-width:750px;margin:auto}
+.activity-item{display:flex;gap:20px;padding:20px;margin-bottom:15px;border-radius:18px;background:#f8f3ff;align-items:center}
+.activity-icon{width:55px;height:55px;background:#e9d9ff;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:25px;flex-shrink:0}
+.activity-item h3{color:var(--purple);font-size:17px}
+.activity-item p{font-size:13px;color:#82788e}
+.contact{background:linear-gradient(135deg,#eee4ff,#ffeafa);text-align:center}
+.contact p{color:#76658c;margin:12px 0 25px}
+.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:15px}
+footer{text-align:center;background:#39245e;color:white;padding:25px;font-size:13px}
+@media(max-width:768px){
+nav{padding:15px 5%;flex-direction:column;gap:12px}
+nav ul{gap:15px;flex-wrap:wrap;justify-content:center}
+nav a{font-size:12px}
+section{padding:65px 6%}
+.home{flex-direction:column-reverse;text-align:center;padding-top:50px}
+.home .buttons{justify-content:center}
+.profile{width:190px;height:190px;font-size:75px}
+.heading h2{font-size:26px}
+.about-content{padding:23px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">✿ นายอธิป นุ่มนวลศรี</div>
+  <ul>
+    <li><a href="#home">หน้าแรก</a></li>
+    <li><a href="#about">แนะนำตัว</a></li>
+    <li><a href="#portfolio">ผลงาน</a></li>
+    <li><a href="#activity">กิจกรรม</a></li>
+    <li><a href="#contact">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<section class="home" id="home">
+  <div class="home-text">
+    <span class="tag">WELCOME TO MY PORTFOLIO ✨</span>
+    <h1>Hello, I'm<br><span>นายอธิป นุ่มนวลศรี</span></h1>
+    <p>ยินดีต้อนรับเข้าสู่เว็บไซต์ E-Portfolio ของผม พื้นที่รวบรวมประวัติส่วนตัว ผลงาน และกิจกรรมที่น่าสนใจ</p>
+    <div class="buttons">
+      <a href="#portfolio" class="btn btn-primary">ดูผลงานของฉัน →</a>
+      <a href="#about" class="btn btn-outline">รู้จักผมเพิ่มเติม</a>
+    </div>
+  </div>
+  <div class="profile">👨🏻‍💻</div>
+</section>
+
+<section class="about" id="about">
+  <div class="heading"><h2>About Me ♡</h2><p>แนะนำตัวและทำความรู้จักกับผม</p></div>
+  <div class="about-content">
+    <h3>สวัสดี ผมชื่อนายอธิป นุ่มนวลศรี</h3>
+    <p>ผมเป็นผู้ที่สนใจด้านเทคโนโลยี คอมพิวเตอร์ และการเขียนโปรแกรม ชอบเรียนรู้สิ่งใหม่ ๆ และพัฒนาทักษะของตัวเองอยู่เสมอ</p>
+    <p>เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติ ผลงาน และกิจกรรมต่าง ๆ ที่แสดงถึงความสามารถและประสบการณ์ของผม</p>
+    <h3 style="margin-top:20px">My Skills</h3>
+    <div class="skills">
+      <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Computer</span><span class="skill">Technology</span>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="heading"><h2>My Portfolio ✨</h2><p>รวบรวมผลงานที่ผ่านมาของผม</p></div>
+  <div class="cards">
+    <div class="card"><div class="card-image">💻</div><div class="card-content"><h3>เว็บไซต์ E-Portfolio</h3><p>ผลงานการสร้างเว็บไซต์แนะนำตัวด้วย HTML และ CSS</p></div></div>
+    <div class="card"><div class="card-image">🎨</div><div class="card-content"><h3>Graphic Design</h3><p>ผลงานการออกแบบกราฟิกและสื่อประชาสัมพันธ์</p></div></div>
+    <div class="card"><div class="card-image">📊</div><div class="card-content"><h3>Data Analysis</h3><p>ผลงานการรวบรวมและวิเคราะห์ข้อมูลด้วยโปรแกรมคอมพิวเตอร์</p></div></div>
+  </div>
+</section>
+
+<section class="activity" id="activity">
+  <div class="heading"><h2>My Activities 🌷</h2><p>กิจกรรมและประสบการณ์ที่น่าจดจำ</p></div>
+  <div class="activity-box">
+    <div class="activity-item"><div class="activity-icon">🏫</div><div><h3>กิจกรรมภายในโรงเรียน</h3><p>เข้าร่วมกิจกรรมและเรียนรู้ประสบการณ์ใหม่ ๆ</p></div></div>
+    <div class="activity-item"><div class="activity-icon">💻</div><div><h3>กิจกรรมด้านเทคโนโลยี</h3><p>ฝึกฝนการใช้คอมพิวเตอร์และการเขียนโปรแกรม</p></div></div>
+    <div class="activity-item"><div class="activity-icon">🏆</div><div><h3>กิจกรรมพัฒนาทักษะ</h3><p>เรียนรู้และพัฒนาความสามารถของตนเอง</p></div></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="heading"><h2>Contact Me 💌</h2><p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ของผม</p></div>
+  <div class="contact-links">
+    <a href="https://github.com/" target="_blank" rel="noopener" class="btn btn-primary">GitHub ↗</a>
+    <a href="mailto:example@email.com" class="btn btn-outline">Email ✉</a>
+  </div>
+</section>
+
+<footer><p>© 2026 นายอธิป นุ่มนวลศรี | E-Portfolio</p></footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('nav a').forEach(item => item.style.color = '#39275d');
+    this.style.color = '#c05ed1';
+  });
+});
+console.log("Welcome to นายอธิป นุ่มนวลศรี Portfolio!");
+</script>
+</body>
+</html>
